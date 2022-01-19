@@ -1,0 +1,7 @@
+﻿  Main.cpp
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUser\LoginUser\src\Main.cpp(152,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUser\LoginUser\src\Main.cpp(152,38): warning C4244: 'return': conversion from 'float' to '__int64', possible loss of data
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUser\LoginUser\src\Main.cpp(156,37): warning C4244: 'argument': conversion from '__int64' to 'float', possible loss of data
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUser\LoginUser\src\Main.cpp(156,20): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUser\LoginUser\src\Main.cpp(45): warning C4717: 'LoginUser::login': recursive on all control paths, function will cause runtime stack overflow
+  LoginUser.vcxproj -> D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUser\x64\Debug\LoginUser.exe
