@@ -1,0 +1,8 @@
+﻿  MyForm.cpp
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUserForm\LoginUserForm\MyForm.h(179,20): warning C4101: 'e': unreferenced local variable
+  Program.cpp
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUserForm\LoginUserForm\MyForm.h(179,20): warning C4101: 'e': unreferenced local variable
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUserForm\LoginUserForm\Program.cpp(8,1): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  Generating Code...
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  LoginUserForm.vcxproj -> D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUserForm\x64\Debug\LoginUserForm.exe
