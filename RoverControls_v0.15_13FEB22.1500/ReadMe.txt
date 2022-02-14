@@ -11,12 +11,6 @@ Things to be done:
 6. Apply graphics to all app (preferable ImGUI)
 
 
-AppWizard has created this Rover_Control_commands application for you.
-
-This file contains a summary of what you will find in each of the files that
-make up your Rover_Control_commands application.
-
-
 Rover_Control_commands.vcxproj
     This is the main project file for VC++ projects generated using an Application Wizard.
     It contains information about the version of Visual C++ that generated the file, and
