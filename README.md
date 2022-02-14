@@ -1,5 +1,7 @@
 ========================================================================
-    CONSOLE APPLICATION : Rover Control Commands - Project Overview
+
+                     CONSOLE APPLICATION : Rover Control Commands - Project Overview
+
 ========================================================================
 
 Things to DO:
