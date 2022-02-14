@@ -2,7 +2,7 @@
    ||                                                                        ||
    ||  Console app to control Formula Allcode robot-rover, model RB4420      ||
    ||  This is the LIGHT version, without the rover pre-defined commands     ||
-   ||  Date: 5th Feb 2022. © Denis Manolescu, Liverpool Hope University      ||
+   ||  Date: 5th Feb 2022. Â© Denis Manolescu, Liverpool Hope University      ||
    ||                                                                        ||
     \\ ==================================================================== //
  */
@@ -32,7 +32,7 @@ public:
     void right() {};
     void reverse() {};
     void cancel_reverse() {};
-    char comPort_dvc1 = 4;
+    char comPort_dvc1 = 5; // Device COM port
 };
 
 class MovementKeys {
