@@ -3,7 +3,7 @@
 ========================================================================
 
 Things to be done:
-1. Integrate IR sensor readings and map those into the real distance
+1. Integrate IR sensor readings and map those into real distance data
 2. Option to edit rove LCD screen
 3. Option to increase speed (from 30 default by a 10th until 100 max)
 4. option to turn on Lights (8 LED front lights)
