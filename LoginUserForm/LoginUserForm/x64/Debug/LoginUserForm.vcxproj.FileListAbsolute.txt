@@ -1,0 +1,6 @@
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUserForm\LoginUserForm\x64\Debug\LoginUserForm.vcxproj.AssemblyReference.cache
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUserForm\LoginUserForm\x64\Debug\LoginUserForm.vcxproj.SuggestedBindingRedirects.cache
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUserForm\LoginUserForm\x64\Debug\LoginUserForm.AddUserForm.resources
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUserForm\LoginUserForm\x64\Debug\LoginUserForm.MyForm.resources
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUserForm\LoginUserForm\x64\Debug\LoginUserForm.RecPass.resources
+D:\HOPE UNIVERSITY\Second year\CSC core\OOSD\Coursework\LoginUserForm\LoginUserForm\x64\Debug\LoginUserForm.vcxproj.GenerateResource.cache
