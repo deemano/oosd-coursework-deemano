@@ -60,6 +60,8 @@
     #define VK_KEY_L    0x4C    //  ('L')       L   Read 3D accelerometer data
     #define VK_KEY_K    0x4B    //  ('K')       K   Read actuators encoder data
     #define VK_KEY_J    0x4A    //  ('J')       J   Resets motors encoders
+    
+## 📚 Default Control Keys:
 
 - key_forward     =             VK_UP          Drive forwards
 - key_backward    =             VK_DOWN        Drive backwards
