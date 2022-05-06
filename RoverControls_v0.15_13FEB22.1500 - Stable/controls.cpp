@@ -22,7 +22,7 @@ bool demo = false; // variable to activate Demo mode
 #define VK_KEY_D	0x44    //  ('D')	    D   Right  
 #define VK_KEY_S	0x53    //  ('S')	    S   Backward 
 #define VK_KEY_Q	0x51    //  ('Q')	    Q   Cancel reverse keys
-#define VK_KEY_Y    0x59    //  ('Y')	    Y   Accelerometer data read
+#define VK_KEY_Y    	0x59    //  ('Y')	    Y   Accelerometer data read
 #define VK_KEY_O	0x4F    //  ('O')	    O   Buttom Line sensor read
 #define VK_KEY_T	0x54    //  ('T')       T   Turn 180 degrees
 #define VK_KEY_U	0x55    //  ('U')	    U   Compass bear data read
@@ -335,12 +335,17 @@ void MovementKeys::definedCommand() {
             FA_ComClose(iPort);
             exit(0);
         }
-        // Compass bearing data reading
-        if (GetAsyncKeyState(VK_KEY_U) < 0) {
-            sounds(iPort, 500, 100);
-            compass();
-            Sleep(250);
-        }
+	    
+       // Compass bearing data reading. BIG BUG caused by sensor interference. 
+	// Not related to software
+        // This sensor makes the IR sensor read wrong values and triggers safety stops
+        // Need more time on this. For now is diabled.
+        // 
+        //if (GetAsyncKeyState(VK_KEY_U) < 0) {
+        //    sounds(iPort, 500, 100);
+        //    compass();
+        //}
+	    
         // Light sensor data reading
         if (GetAsyncKeyState(VK_KEY_I) < 0) {
             sounds(iPort, 500, 100);
