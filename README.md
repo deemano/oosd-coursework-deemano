@@ -39,10 +39,11 @@
     1. Auto-explore surroundings
     2. Turn Home command (follow the same path)
     3. Link GUI to commands and data
+                                 
 
-## 📚  Application Control Keys:
+## 📚 Application Control Keys: 
 
-#define VK_KEY_W    0x57    //  ('W')       W   Forward
+    #define VK_KEY_W    0x57    //  ('W')       W   Forward
 #define VK_KEY_A    0x41    //  ('A')       A   Left
 #define VK_KEY_D    0x44    //  ('D')       D   Right  
 #define VK_KEY_S    0x53    //  ('S')       S   Backward 
