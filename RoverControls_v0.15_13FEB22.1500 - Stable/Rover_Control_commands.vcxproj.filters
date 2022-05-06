@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main_rover.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FA_API.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="controls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stopwatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8e711a06-602f-463a-b460-ed343e0cc777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources Files">
+      <UniqueIdentifier>{667b6f6f-3c22-4252-a8f1-fe8e84d751fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0629fd20-2be7-4920-9448-ff1f6980dd1e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>Resources Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="FASlave.lib">
+      <Filter>Resources Files</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

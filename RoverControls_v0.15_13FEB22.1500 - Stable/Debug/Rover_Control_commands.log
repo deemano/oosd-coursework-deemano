@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  controls.cpp
+C:\Users\deeman\Desktop\OOSD Rover Finals\rover_control_console\RoverControls_v0.15_13FEB22.1500 - Stable\controls.cpp(99,16): warning C4101: 'myNum': unreferenced local variable
+  main_rover.cpp
+  Generating Code...
+  Rover_Control_commands.vcxproj -> C:\Users\deeman\Desktop\OOSD Rover Finals\rover_control_console\RoverControls_v0.15_13FEB22.1500 - Stable\Debug\RoverControlConsole.exe
