@@ -1,52 +1,88 @@
+
+/*  // ==================================================================== \\
+   ||                                                                        ||
+   ||  Console app to control Formula Allcode robot-rover, model RB4420      ||
+   ||  This is the console version, without GUI,                             ||
+   ||  Date: 5th Feb - 5th May 2022.                                         ||
+   ||  © Denis Manolescu, Liverpool Hope University                          ||
+   ||                                                                        ||
+    \\ ==================================================================== //
+ */
+
+
 ========================================================================
     CONSOLE APPLICATION : Rover_Control_commands Project Overview
 ========================================================================
 
-Things to DO:
-1. Integrate IR sensor readings and map those into real distance data.
-2. Option to edit rovre LCD screen.
-3. Option to increase speed (from 30 default by a 10th fold, to 100 max).
-4. Option to turn on Lights (8 LED front lights).
-5. Maybe the option to memorize turns and to use those to return rover.
-6. Apply graphics to all App (preferable ImGUI).
-7. Make COM port single device specific variable to be able to derive 
-   and control another device in the same time.
+🤓 Integrations: 🚀
+
+1. Objects and Classes                      ✓
+2. Inheritance                              ✓
+3. Polymorphism - run-time func overr       ✓
+4. Exception Handling - Try/throw/catch     ✓
+5. Functions                                ✓
+6. Arrays, Strings and Vectors              ✓
+7. Pointers and References                  ✓
+8. Graphics libs OpenGL, Vulkan, ImGui      ✓
 
 
+💻 Implemented features:
 
-AppWizard has created this Rover_Control_commands application for you.
+1. Autoscan & autoselect device COM port                        ✓
+2. IR sensors data & distance to objects generation             ✓
+3. Light sensor - detect edges / surface limits                 ✓
+4. Light sensor - detect ambiental light                        ✓
+5. 3D Accelerometer positioning of rover in XYZ                 ✓
+6. Compass bearing data - position in ref to mag. N pole        ✓
+7. Encoders data read to determine distance driven              ✓
+8. Speed calculation via encoders                               ✓
+9. Set LCD Text                                                 ✓
+10. LED On/Off commands                                         ✓
+11. Objects collision & edge stops                              ✓
+12. Sounds                                                      ✓
+13. Left-to-right switch main driving commands                  ✓
+14. Multi-purpose keypress driving commands                     ✓
+15. User modes: Normal & Demo (without rover)                   ✓
+16. Auto-turn 180 degress                                       ✓
+17. Dynamic GUI (not linked yet)                                ✓
 
-This file contains a summary of what you will find in each of the files that
-make up your Rover_Control_commands application.
+
+📝 Features in progress:
+
+1. Auto-explore surroundings
+2. Turn Home command (follow the same path)
+3. Link GUI to commands and data
+
+📚 Default Control Keys:
+
+key_forward = VK_UP Drive forwards
+key_backward = VK_DOWN Drive backwards
+key_left = VK_LEFT Dive left
+key_right = VK_RIGHT Drive right
+key_reverse = VK_RSHIFT Activate / deactivate drive reverse left of right
+turn = VK_KEY_T Turn 180 degress, on spot
 
 
-Rover_Control_commands.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
+📚 Application Control Keys:
 
-Rover_Control_commands.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
+#define VK_KEY_W    0x57    //  ('W')       W   Forward
+#define VK_KEY_A    0x41    //  ('A')       A   Left
+#define VK_KEY_D    0x44    //  ('D')       D   Right  
+#define VK_KEY_S    0x53    //  ('S')       S   Backward 
+#define VK_KEY_Y    0x59    //  ('Y')       Y   Accelerometer data read
+#define VK_KEY_O    0x4F    //  ('O')       O   Buttom Line sensor read
+#define VK_KEY_T    0x54    //  ('T')       T   Turn 180 degrees
+#define VK_KEY_U    0x55    //  ('U')       U   Compass bear data read
+#define VK_KEY_I    0x49    //  ('I')       I   Light sensor data read
+#define VK_KEY_P    0x50    //  ('P')       P   IR distance sensor read
+#define VK_KEY_0    0x30    //  ('0')       0   Turn all x8 LED On (This is zero not the letter 'O')
+#define VK_KEY_9    0x39    //  ('9')       9   Turn all x8 LED Off
+#define VK_KEY_R    0x52    //  ('R')       R   Reset safety stop
+#define VK_KEY_X    0x58    //  ('X')       X   Restart COM port autoscan
+#define VK_KEY_L    0x4C    //  ('L')       L   Read 3D accelerometer data
+#define VK_KEY_K    0x4B    //  ('K')       K   Read actuators encoder data
+#define VK_KEY_J    0x4A    //  ('J')       J   Resets motors encoders
 
-Rover_Control_commands.cpp
-    This is the main application source file.
 
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
+===============================================================================================================
 
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named Rover_Control_commands.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
