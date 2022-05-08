@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 #include <chrono>
+#include <sstream>
 
 using namespace std;
 
@@ -32,30 +33,29 @@ using namespace std;
 #define VK_KEY_J	0x4A    //  ('J')	    J   Resets motors encoders
 #define VK_RMENU	0xA5	//  (Right ALT))    Cancel drivng back-right / back-left feature
 
-// default Com Port number for DeviceOne
+
+// Base class - contains default COM-port number. Other device info to be added in the future.
 class DeviceOne {
 private:
-    int comPort = 1; // default value
+    int comPort = 1;        // default value
 public:
-    int port();
+    virtual int port();     // changes the private default comPort to user input 
+    int port(int portGiven);// change the private default COM-port value using pointer
+    int autoSet_comPort();  // carries all COM port selection process, including run-time polymorphism
 };
 
+// Derived class - Inheritance
 class Checker: public DeviceOne {
 public:
-    int temp{};
-    int autoScanPort();
-    int autoSet_comPort();
-    int migrateCom();
+    int temp{}; 
+    int port(); // main COM port selection method
 };
 
-// this is to prove the concept of inheritance
-// also, makes it easier to add future commands.
-// MovementKeys contains the keypress variables to be used by OtherMovements
+// Data class with all methods to gather information from device
 class Data{
 public:
-    // data functions
     bool safety = true; // used for safety stops in control
-    void accelerometer();
+    // data functions:
     void compass();
     void writeOnLCD();
     void lightSensor();
@@ -65,25 +65,26 @@ public:
     double irFormula(double dataIn);
     void irProximityCheck();
     void irRadar();
+    int accelerometer();
 };
 
-// This defines the basic rover move commands
+// Movement commands main class. Derived from Data class
 class MovementKeys:public Data {
-    // member variables:
 private:
-    // keeping reference to deviceOne instead of copy; 
+    // keeping reference to deviceOne instead of copy - high efficency.
     // main() has to make sure deviceOne object out-lives MovementKeys object
     DeviceOne& deviceOne;
+    // private basic control commands variables:
     int key_forward{}, key_backward{}, key_left{}, key_right{}, key_reverse{};
 
 public:
     int turn;
     int reset = 0;
     int reverse = 0;
-    //// IR reading variables:
+    // IR reading variables:
     double frontIR{}, backIR{}, frontLeftIR{}, frontRightIR{}, backLeftIR{}, backRightIR{};
 
-    // constructor, which only sets deviceOne and keeps the keys name at their Default
+    // constructor, which only sets deviceOne and keeps the keys name at their default
     // deviceOne must be initialized before constructor function body
     // as references have no default value
     MovementKeys(DeviceOne& gr) : deviceOne(gr)
@@ -95,13 +96,11 @@ public:
         key_reverse     = VK_RSHIFT;    // Activate / deactivate drive reverse left of right
         turn            = VK_KEY_T;     // Turn 180 on spot
         int reverse = 0;
-        int comPort{};
-       int iPort {};
+        int comPort {};
+        int iPort {};
     }
-
-    // loop to define rules of the keys pressed commands
-    void definedCommand();
-    void turn180();
+    void definedCommand();              // loop to define rules of the key-pressed commands
+    void turn180();                     // turn device 180 degrees method
     // function overloading
     void sounds(int start);
     void sounds(int start, int honk);
