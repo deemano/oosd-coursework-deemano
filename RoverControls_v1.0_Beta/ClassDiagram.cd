@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DeviceOne">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAgAAAAAAQAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>controls.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checker">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAgAAA=</HashCode>
+      <FileName>controls.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data">
+    <Position X="3.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>GAAAAAAAAAAAAAAAAAAAIAAAAIAAAAgAAAAAQAgAEEI=</HashCode>
+      <FileName>controls.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Control">
+    <Position X="0.5" Y="4.5" Width="8.25" />
+    <TypeIdentifier>
+      <HashCode>ABACBABEAAAAgAIhAAAAAAAAAAAEQAIAAAEAEEQwAAg=</HashCode>
+      <FileName>controls.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="win32::Stopwatch" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAASAACIABAAAIAQgAAAAAYAAAAAAIAAgAAAAAAA=</HashCode>
+      <FileName>Stopwatch.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
